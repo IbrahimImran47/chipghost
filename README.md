@@ -2,7 +2,7 @@
 
 **Pull a chip. Plug us in. We pretend to be it -- and tell you what's wrong.**
 
-ChipGhost is an open-source FPGA-based chip-in-the-loop test platform. It combines a logic analyzer, pattern generator, and reactive engine into one $69 device.
+ChipGhost is an open-source FPGA-based chip-in-the-loop test platform. It combines a logic analyzer, pattern generator, and reactive engine into one device.
 
 ## What It Does
 
