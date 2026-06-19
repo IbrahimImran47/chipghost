@@ -29,7 +29,7 @@ A capstone team built a neural interface with a sense chip, stim chip, and Ardui
 | Module | Status |
 |--------|--------|
 | Sampler (probe capture) | Done |
-| Trigger engine | TODO |
+| Trigger engine | Done |
 | UART TX/RX | TODO |
 | SUMP controller (sigrok) | TODO |
 | Pattern generator | TODO |

@@ -109,13 +109,16 @@ Captures probe inputs into BRAM at clock speed.
 - 16K sample depth (scales to 128K on ECP5)
 - Status: Implemented and tested
 
-### Module 2: Trigger Engine (rtl/trigger.v) -- TODO
+### Module 2: Trigger Engine (rtl/trigger.v) -- DONE
 
-Decides when to start capturing.
+Decides when to start capturing. Emits a single-cycle `trigger` pulse to the
+sampler; fires once per arm cycle (latches until re-armed).
 
 - Edge trigger: rising/falling/any edge on selected channel
-- Pattern trigger: match specific bit pattern across all channels
+- Pattern trigger: masked bit-pattern match across all channels
+- Double-flop input synchronizer (aligns with the sampler's input pipeline)
 - Protocol trigger (Phase 2): trigger on I2C address, SPI command, etc.
+- Status: Implemented and tested (tb/tb_trigger.v, 10 checks)
 
 ### Module 3: UART TX/RX (rtl/uart_tx.v, rtl/uart_rx.v) -- TODO
 
@@ -211,7 +214,7 @@ One-click export to interactive web viewer. Paste a URL into a forum post -- oth
 
 ### Phase 1: Logic Analyzer (Current)
 - [x] Sampler module
-- [ ] Trigger engine
+- [x] Trigger engine
 - [ ] UART TX/RX
 - [ ] SUMP controller
 - [ ] Top-level integration
