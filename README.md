@@ -8,7 +8,7 @@ you can debug circuits where multiple chips talk to each other over I²C, SPI, a
 
 ---
 
-## The 30-second pitch
+
 
 When an embedded system breaks, engineers hit two walls:
 
